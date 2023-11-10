@@ -1,0 +1,8 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./programs/hello-world/Cargo.toml",
+        "./programs/hello-world/Cargo.toml",
+        "./programs/hello-world/Cargo.toml"
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false
+}
