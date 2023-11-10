@@ -1,5 +1,5 @@
-use crate::state::AddressInfo;
 use anchor_lang::prelude::*;
+use crate::state::*;
 
 #[derive(Accounts)]
 pub struct CreateAddressInfo<'info> {
@@ -16,7 +16,7 @@ pub fn create_address_info(
     house_number: u8,
     street: String,
     city: String,
-) {
+) -> Result<()> {
     *ctx.accounts.address_info = AddressInfo {
         name,
         house_number,
